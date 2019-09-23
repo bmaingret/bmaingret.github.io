@@ -1,0 +1,71 @@
+title: Baptiste Maingret's Homepage
+email: baptiste.maingret@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website I started during my training in data sciences. There might be more. Or not.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://bmaingret.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  bmaingret
+name: "Baptiste Maingret"
+repository: "bmaingret/bmaingret.github.io"
+
+# Build settings
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+
+# minimal-mistakes customization
+timezone: Europe/Paris
+
+minimal_mistakes_skin: "air"
+
+search: true
+
+include: 
+  - _pages
+exclude:
+  - Gemfile
+  - tmp
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+author:
+        name: "Baptiste Maingret"
+        avatar: "/assets/images/bio-photo.jpg"
+        bio: "French aspiring data scientist with a strong appeal for eHealth.
+        I also like travelling, guitars, burratas, video games and in general any ***-**engineering."
+        location: "Nancy, France"
+        links:
+                - label: "Linkedin"
+                  icon: "fab fa-fw fa-linkedin"
+                  url: "https://linkedin.com/in/baptistemaingret"
+                - label: "GitHub"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://github.com/bmaingret"
+
+
+category_archives:
+        type: liquid
+        path: /categories/
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

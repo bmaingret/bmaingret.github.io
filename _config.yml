@@ -8,10 +8,18 @@ github_username:  bmaingret
 name: "Baptiste Maingret"
 repository: "bmaingret/bmaingret.github.io"
 
+analytics:
+  provider: "google-gtag"
+  google:
+  tracknig_id: "UA-149004210-1"
+  anonymize_ip: true
+
+
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-include-cache
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed

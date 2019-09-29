@@ -141,6 +141,7 @@ GEM
       rubyzip (>= 1.2.1, < 3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo (0.0.2)
     jekyll-seo-tag (2.5.0)
       jekyll (~> 3.3)
     jekyll-sitemap (1.2.0)
@@ -251,6 +252,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-include-cache
   jekyll-paginate
+  jekyll-seo
   jekyll-sitemap
   jemoji
   tzinfo (~> 1.2)

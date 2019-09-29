@@ -5,3 +5,5 @@ main:
     url: /now/
   - title: "Categories"
     url: /categories/
+  - title: "Privacy Statement"
+    url: /privacy-statement/

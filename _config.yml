@@ -62,6 +62,8 @@ category_archives:
         type: liquid
         path: /categories/
 
+paginate: 5
+paginate_path: /
 
 defaults:
   # _posts
@@ -71,6 +73,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
+      excerpt_separator: <!--more-->
   # _pages
   - scope:
       path: ""
@@ -78,3 +82,4 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide

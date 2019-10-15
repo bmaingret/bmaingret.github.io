@@ -17,7 +17,6 @@ analytics:
 google_site_verification : "ehG0k64s7-KvuTjVq2RKWYoDUV9_QijOcKairEqC0lA"
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
@@ -25,8 +24,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 
-# minimal-mistakes customization
+  # minimal-mistakes customization
+remote_theme: "mmistakes/minimal-mistakes"
+
 timezone: Europe/Paris
 
 minimal_mistakes_skin: "air"
@@ -62,8 +64,6 @@ category_archives:
         type: liquid
         path: /categories/
 
-paginate: 5
-paginate_path: /
 
 defaults:
   # _posts

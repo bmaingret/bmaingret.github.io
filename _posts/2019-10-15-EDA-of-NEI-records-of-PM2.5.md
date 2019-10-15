@@ -3,7 +3,7 @@ category: [datascience, assignement]
 tags: [R, EDA, Data Science, Coursera, Plot]
 
 ---
-Assignement: EDA of NEI records of PM2.5
+EDA of NEI records of PM2.5
 ================
 
 ## EDA of NEI records of PM2.5 for 1999, 2002, 2005, and 2008 (part of Exploratory Data Analysis by Johns Hopkins University)
@@ -246,7 +246,7 @@ barplot(totals$total,
 abline(lm( totals$total ~as.numeric(totals$year)), col="red")
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q1-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q1-1.png)<!-- -->
 
 ``` r
 dev.print(device = png, file = "plot1.png", width = 500, pointsize=10)
@@ -276,7 +276,7 @@ barplot(totals_baltimore$total,
 abline(lm( totals_baltimore$total ~as.numeric(totals_baltimore$year)), col="red")
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q2-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q2-1.png)<!-- -->
 
 ``` r
 dev.print(device = png, file = "plot2.png", width = 500, pointsize=10)
@@ -303,7 +303,7 @@ g <- g + coord_cartesian(xlim=c(1999,2008))
 print(g)
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q3-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q3-1.png)<!-- -->
 
     ## Saving 7 x 5 in image
 
@@ -323,7 +323,7 @@ g <- g + coord_cartesian(xlim=c(1999,2008))
 print(g)
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q4-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q4-1.png)<!-- -->
 
     ## Saving 7 x 5 in image
 
@@ -349,7 +349,7 @@ g <- g + coord_cartesian(xlim=c(1999,2008),ylim=c(0,400))
 print(g)
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q5-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q5-1.png)<!-- -->
 
     ## Saving 7 x 5 in image
 
@@ -374,6 +374,6 @@ g <- g + labs(x="Year", y ="Tons of PM2.5", title="PM2.5 Emission for motor vehi
 print(g)
 ```
 
-![](/assets/2019-10-15-R-Markdown-and-plotting/figure-gfm/Data%20plotting%20for%20Q6-1.png)<!-- -->
+![](/assets/2019-10-15-EDA-of-NEI-records-of-PM2.5/figure-gfm/Data%20plotting%20for%20Q6-1.png)<!-- -->
 
     ## Saving 7 x 5 in image

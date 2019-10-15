@@ -14,7 +14,7 @@ analytics:
     tracking_id: "UA-149004210-1"
     anonymize_ip: true
 
-google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+google_site_verification : "ehG0k64s7-KvuTjVq2RKWYoDUV9_QijOcKairEqC0lA"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"

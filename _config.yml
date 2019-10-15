@@ -11,7 +11,7 @@ repository: "bmaingret/bmaingret.github.io"
 analytics:
   provider: "google-gtag"
   google:
-  tracknig_id: "UA-149004210-1"
+  tracking_id: "UA-149004210-1"
   anonymize_ip: true
 
 

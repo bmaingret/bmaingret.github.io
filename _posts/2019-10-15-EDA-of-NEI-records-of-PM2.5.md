@@ -1,10 +1,8 @@
 ---
 category: [datascience, assignement]
 tags: [R, EDA, Data Science, Coursera, Plot]
-
+title: "EDA of NEI records of PM2.5"
 ---
-EDA of NEI records of PM2.5
-================
 
 ## EDA of NEI records of PM2.5 for 1999, 2002, 2005, and 2008 (part of Exploratory Data Analysis by Johns Hopkins University)
 

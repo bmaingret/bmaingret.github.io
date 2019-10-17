@@ -18,7 +18,7 @@ More details to come on a [dedicated page]().
   - [X] [The Data Scientist's Toolbox](https://www.coursera.org/learn/data-scientists-tools) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/FG4NE3KD92G4)
   - [X] [R Programming](https://www.coursera.org/learn/r-programming) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/7Y9NE2U62Y3K)
   - [X] [Getting and Cleaning Data](https://www.coursera.org/learn/data-cleaning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/F3487GB94L8Y)
-  - [X] [Exploratory Analysis](https://www.coursera.org/learn/exploratory-data-analysis) - [Certificate of completion]()
+  - [X] [Exploratory Analysis](https://www.coursera.org/learn/exploratory-data-analysis) - [Certificate of completion](https://www.coursera.org/account/accomplishments/certificate/6QAUSPH5DAFL)
   - [ ] [Reproducible Research](https://www.coursera.org/learn/reproducible-research)
   - [ ] [Statistical Inference](https://www.coursera.org/learn/statistical-inference)
   - [ ] [Regression Models](https://www.coursera.org/learn/regression-models)
@@ -26,8 +26,7 @@ More details to come on a [dedicated page]().
   - [ ] [Developing Data Products](https://www.coursera.org/learn/data-products)
   - [ ] [Data Science Capstone](https://www.coursera.org/learn/data-science-project)
 - [ ] [Udacity - Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)
-- [ ] [Udacity - Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025
-)
+- [ ] [Udacity - Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
 - [ ] [Coursera - Advanced Machine Learning](https://www.coursera.org/specializations/aml)
 - [ ] [Coursera - Executive Data Science Specialization](https://www.coursera.org/specializations/executive-data-science)
 

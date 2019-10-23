@@ -8,6 +8,7 @@ title: "EDA of activity monitoring data"
 
 This assignment was part of the Johns Hopkins Coursera module on [Reproducible Research](https://www.coursera.org/learn/reproducible-research) as part of the [Data Sciene Specialization](https://www.coursera.org/specializations/jhu-data-science).
 
+ <!--more-->
 
 Full code can be found on [GitHub](https://github.com/bmaingret/RepData_PeerAssessment1).
 

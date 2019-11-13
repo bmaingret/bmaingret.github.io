@@ -36,4 +36,5 @@ More details to come on a [dedicated page]().
 - [ ] [Clinical Data Science Specialization](https://www.coursera.org/specializations/clinical-data-science)
 
 
-> Last updated: 2019-10-15
+> Last updated: 2019-11-13
+

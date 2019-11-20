@@ -22,8 +22,8 @@ More details to come on a [dedicated page]().
   - [X] [Reproducible Research](https://www.coursera.org/learn/reproducible-research) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/7A4D6RMXRK5J)
   - [X] [Statistical Inference](https://www.coursera.org/learn/statistical-inference) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/SYE8AVHFAZ4H)
   - [X] [Regression Models](https://www.coursera.org/learn/regression-models)
-  - [ ] [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
-  - [ ] [Developing Data Products](https://www.coursera.org/learn/data-products)
+  - [X] [Practical Machine Learning](https://www.coursera.org/learn/practical-machine-learning)
+  - [X] [Developing Data Products](https://www.coursera.org/learn/data-products)
   - [ ] [Data Science Capstone](https://www.coursera.org/learn/data-science-project)
 - [ ] [Udacity - Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)
 - [ ] [Udacity - Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
@@ -36,5 +36,4 @@ More details to come on a [dedicated page]().
 - [ ] [Clinical Data Science Specialization](https://www.coursera.org/specializations/clinical-data-science)
 
 
-> Last updated: 2019-11-13
-
+> Last updated: 2019-11-20

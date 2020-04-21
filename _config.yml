@@ -27,7 +27,7 @@ plugins:
   - jekyll-remote-theme
 
   # minimal-mistakes customization
-remote_theme: "mmistakes/minimal-mistakes@4.19.1"
+remote_theme: "mmistakes/minimal-mistakes"
 
 timezone: Europe/Paris
 
@@ -64,7 +64,7 @@ category_archives:
         type: liquid
         path: /categories/
 
-
+ 
 defaults:
   # _posts
   - scope:

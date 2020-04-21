@@ -10,7 +10,7 @@ This assignement focused only on plots as part of EDA. We did not
 checked for erroneous/missing data.
  <!--more-->
 Source code available on
-[GitHub](https://github.com/bmaingret/NEI_199-2008_EDA)
+[GitHub](https://github.com/bmaingret/coursera-data-science-jhu/tree/master/04-exploratory-data-analysis/02-project)
 
 ## Quick look at the data
 

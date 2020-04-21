@@ -10,7 +10,7 @@ This assignment was part of the Johns Hopkins Coursera module on [Reproducible R
 
  <!--more-->
 
-Full code can be found on [GitHub](https://github.com/bmaingret/RepData_PeerAssessment1).
+Full code can be found on [GitHub](https://github.com/bmaingret/coursera-data-science-jhu/tree/master/05-reproducible-research/01-week2-assignement).
 
 ## Loading and preprocessing the data
 
@@ -269,4 +269,3 @@ g
 ```
 
 ![](/assets/2019-10-23-Reproducible-Research_Activity-data/unnamed-chunk-19-1.png)<!-- -->
-

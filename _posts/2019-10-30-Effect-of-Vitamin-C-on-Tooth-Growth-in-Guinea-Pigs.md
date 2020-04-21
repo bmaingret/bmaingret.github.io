@@ -16,7 +16,7 @@ Specialization](https://www.coursera.org/specializations/jhu-data-science).
 <!--more-->
 
 Source code available on
-[GitHub](https://github.com/bmaingret/stat-inference-project)
+[GitHub](https://github.com/bmaingret/coursera-data-science-jhu/tree/master/06-statistical-inference/01-project)
 
 ## Overview
 

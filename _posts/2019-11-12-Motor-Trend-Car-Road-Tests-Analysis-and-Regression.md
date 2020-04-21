@@ -13,7 +13,7 @@ Specialization](https://www.coursera.org/specializations/jhu-data-science).
 <!--more-->
 
 Source code available on
-[GitHub](https://github.com/bmaingret/regression-models-project)
+[GitHub](https://github.com/bmaingret/coursera-data-science-jhu/tree/master/07-regression-models/01-project)
 
 ## Summary
 

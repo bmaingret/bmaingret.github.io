@@ -15,7 +15,7 @@ Specialization](https://www.coursera.org/specializations/jhu-data-science).
 <!--more-->
 
 Source code available on
-[GitHub](https://github.com/bmaingret/eda-storm-data)
+[GitHub](https://github.com/bmaingret/coursera-data-science-jhu/tree/master/05-reproducible-research/02-project)
 
 [National Weather Service Storm Data
 Documentation](https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2Fpd01016005curr.pdf)

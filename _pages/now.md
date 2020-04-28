@@ -26,6 +26,8 @@ More details to come on a [dedicated page]().
   - [X] [Developing Data Products](https://www.coursera.org/learn/data-products) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/PRWPFULY9HHX)
   - [X] [Data Science Capstone](https://www.coursera.org/learn/data-science-project) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/6LXMYL8K973D)
 - [X] [Udacity - Machine Learning Engineer Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t) - [Certificate of completion](https://confirm.udacity.com/F537C2UF)
+- *Ongoing* [ ] [Coursera - Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+  - [ ] [Neural Network and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/35X3HYP6CPSJ)
 - [ ] [Coursera - Advanced Machine Learning](https://www.coursera.org/specializations/aml)
 - [ ] [Coursera - Executive Data Science Specialization](https://www.coursera.org/specializations/executive-data-science)
 

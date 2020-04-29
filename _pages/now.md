@@ -27,7 +27,11 @@ More details to come on a [dedicated page]().
   - [X] [Data Science Capstone](https://www.coursera.org/learn/data-science-project) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/6LXMYL8K973D)
 - [X] [Udacity - Machine Learning Engineer Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t) - [Certificate of completion](https://confirm.udacity.com/F537C2UF)
 - *Ongoing* [ ] [Coursera - Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
-  - [ ] [Neural Network and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/35X3HYP6CPSJ)
+  - [X] [Neural Network and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/35X3HYP6CPSJ)
+  - [X] [Improving Deep Learning Networks](https://www.coursera.org/learn/deep-neural-network) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/FL6M7584DLKT) 
+  - [ ] [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects) - Certificate of completion
+  - [ ] [Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks) - Certificate of completion
+  - [ ] [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) - Certificate of completion
 - [ ] [Coursera - Advanced Machine Learning](https://www.coursera.org/specializations/aml)
 - [ ] [Coursera - Executive Data Science Specialization](https://www.coursera.org/specializations/executive-data-science)
 
@@ -38,4 +42,4 @@ More details to come on a [dedicated page]().
 - [ ] [Clinical Data Science Specialization](https://www.coursera.org/specializations/clinical-data-science)
 
 
-> Last updated: 2020-04-21
+> Last updated: 2020-04-30

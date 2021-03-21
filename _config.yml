@@ -47,7 +47,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 author:
         name: "Baptiste Maingret"
-        avatar: "/assets/images/bio-photo.jpg"
+        avatar: "/assets/images/bio-photo.webp"
         bio: "French aspiring data scientist with a strong appeal for eHealth.
         I also like travelling, guitars, burratas, video games and in general any ***-**engineering."
         location: "Nancy, France"

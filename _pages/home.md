@@ -12,8 +12,6 @@ This is a personal website I started during my training in data sciences. <br />
 
 If you want to know what I am currently working on, head to my [now page](/now/).
 
-My [Curriculum Vitae](/assets/cv/CV_MAINGRET_Baptiste_2021.pdf) :fr: (:gb: on my LinkedIn).
-
 > Links to my LinkedIn and GitHub are in the left side-bar.
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>

@@ -42,6 +42,9 @@ exclude:
   - tmp
 keep_files:
   - .git
+
+
+
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -83,3 +86,7 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+  - scope:
+      path: "assets/cv/*.pdf"
+    values:
+      sitemap: false

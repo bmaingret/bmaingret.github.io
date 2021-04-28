@@ -11,8 +11,7 @@ classes: wide
 
 ## What am I up to these days
 
-### My own data science curriculum
-
+### Data Science & Machine Learning
 
 - [X] [Coursera - Machine Learning (Standford University)](https://www.coursera.org/learn/machine-learning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/YZK5Q4H5MNTR) - A post about it (to-do)
 - [X] [Coursera - Data Science Specialization (Johns Hopkins University)](https://www.coursera.org/specializations/jhu-data-science) - [Certificate of completion](https://www.coursera.org/verify/specialization/B2LKVWG25QZN)
@@ -36,11 +35,22 @@ classes: wide
 - [ ] [Coursera - Advanced Machine Learning](https://www.coursera.org/specializations/aml)
 - [ ] [Coursera - Executive Data Science Specialization](https://www.coursera.org/specializations/executive-data-science)
 
+### Data engineering & Big Data
+
+- [ ] 🔨 [Coursera - Data Engineering, Big Data, and Machine Learning on GCP Specialization](https://www.coursera.org/specializations/gcp-data-machine-learning)
+  - [X] [Google Cloud Platform Big Data and Machine Learning Fundamentals](https://www.coursera.org/learn/gcp-big-data-ml-fundamentals) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/26AHK797TXJJ)
+  - [ ] [Modernizing Data Lakes and Data Warehouses with GCP](https://www.coursera.org/learn/data-lakes-data-warehouses-gcp)
+  - [ ] [Building Batch Data Pipelines on GCP](https://www.coursera.org/learn/batch-data-pipelines-gcp)
+  - [ ] [Building Resilient Streaming Analytics Systems on GCP](https://www.coursera.org/learn/streaming-analytics-systems-gcp) 
+  - [ ] [Smart Analytics, Machine Learning, and AI on GCP](https://www.coursera.org/learn/smart-analytics-machine-learning-ai-gcp) 
+
+
 ### Health and medical courses
+
 - [X] [eHealth: More than just an electronic record (Sidney University)](https://www.coursera.org/learn/ehealth) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/X8V4LN3PR52E)
 - [X] Human Research - Data or Specimens Only Research - 1-Basic Course (CITI) - [Certificate of completion](https://www.citiprogram.org/verify/?w7bea03c9-f70e-4881-80c4-6843a0901629-30475807)
 - [ ] [Health Informatics Specizalization - Johns Hopkins University](https://www.coursera.org/specializations/health-informatics)
 - [ ] [Clinical Data Science Specialization](https://www.coursera.org/specializations/clinical-data-science)
 
 
-> Last updated: 2021-02-05
+> Last updated: 2021-04-28

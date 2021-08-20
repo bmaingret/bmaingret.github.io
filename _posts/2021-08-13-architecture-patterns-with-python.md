@@ -1,6 +1,6 @@
 ---
 category: [programming, python, reading]
-tags: [pytest, test-driven, domain-driven, ]
+tags: [pytest, test-driven, domain-driven]
 title: "Reading notes for Architecture Patterns with Python by Harry Percival, Bob Gregory"
 ---
 
@@ -68,3 +68,16 @@ class OutOfStock(Exception):
 
 
 
+## Chapter 2 - Repository Pattern
+
+### Port and Adapter
+
+Port usually is some interface, and adapter its implementation. In Python, this usually translates to some abstract base class and its implementation, but it can also be an implicit duck type port.
+
+### ORM
+
+ORM can lead to high dependency towards the ORM framework, and one must be careful to invert the dependency and makes the ORM depends on the domain models instead.
+
+### Repository pattern
+
+Make an abstraction around the storage. Looks like everything is stored in-memory and allows for 

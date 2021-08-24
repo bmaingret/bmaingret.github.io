@@ -6,6 +6,8 @@ title: "Reading notes for Architecture Patterns with Python by Harry Percival, B
 
 Notes, references and codes I wrote while reading [`Architecture Patterns with Python` by Harry Percival, Bob Gregory - O'Reilly](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/).
 
+**Work in progress**
+
 <!--more-->
 
 ## Coding along
@@ -92,6 +94,9 @@ Although I had read a lot and knew this was the way to go, I never took the time
 > I mostly followed [https://ealizadeh.com/blog/guide-to-python-env-pkg-dependency-using-conda-poetry]()
 > 
 > I had so much trouble making everything work under plain Windows, that I moved all my Python dev to WSL2.
+
+![Had to](https://imgs.xkcd.com/comics/python_environment.png)
+> https://xkcd.com/1987
 
 I had learned of Poetry a year ago, but still stuck to Conda. I never liked the Conda way of handling dependencies, but it is still of great help to install some data science tools that are not pure Python. 
 

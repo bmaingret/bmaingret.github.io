@@ -73,6 +73,9 @@ class OutOfStock(Exception):
 
 ## Chapter 2 - Repository Pattern
 
+### Repository pattern
+
+Make an abstraction around the storage. Looks like everything is stored in-memory and allows for 
 ### Port and Adapter
 
 Port usually is some interface, and adapter its implementation. In Python, this usually translates to some abstract base class and its implementation, but it can also be an implicit duck type port.
@@ -80,10 +83,6 @@ Port usually is some interface, and adapter its implementation. In Python, this 
 ### ORM
 
 ORM can lead to high dependency towards the ORM framework, and one must be careful to invert the dependency and makes the ORM depends on the domain models instead.
-
-### Repository pattern
-
-Make an abstraction around the storage. Looks like everything is stored in-memory and allows for 
 
 ## Interlude - Reproducibility and Continuous Integration
 

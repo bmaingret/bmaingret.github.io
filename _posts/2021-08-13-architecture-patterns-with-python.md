@@ -128,3 +128,14 @@ To configure hooks with pre-commit, you need to specify git repositories. Severa
 To this I added [Flake8](https://github.com/PyCQA/flake8) a Python linter,  and [black](https://github.com/psf/black) a code formatter (this will modify your code, although you can make it not, but that would go against the point).
 
 Note that thanks to [pre-commit.ci](https://pre-commit.ci), the same configuration file can be used both to install the hooks locally, and to run checks in a Github Action.
+
+## Chapter 3 - Coupling and Abstractions
+
+> reduce the degree of coupling within a system by abstracting away the details
+
+Some key takeaways:
+
+* Abstractions and decoupling help for testing (c.f. the repository pattern).
+* Separate the core logic code from external states.
+
+This usually allows to do *edge-to-edge* testing, faking some details (quite often I/O). This requires some additional abstractions (around the filesystem for instance) and new explicit dependencies on this abstractions).

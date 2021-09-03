@@ -150,4 +150,25 @@ This usually allows to do *edge-to-edge* testing, faking some details (quite oft
 * Interacting with our domain model is easier and allows for different type of interactions (cli, web, etc.)
 * Ease the high level and end-to-end tests, allowing for fewer tests, and easy refactoring of underlying domain models
 
-Although the concept of service is interesting, this chapter leaves thing in dubious state with still a lot of coupling towards the ORM from both the Flask app and services. Especially with the handling of sessions during tests.
+Although the concept of service is interesting, this chapter leaves things in a dubious state with still a lot of coupling towards the ORM from both the Flask app and services, the low details of domain implementations are everywhere, and testing is getting more and more difficult to init properly.
+
+## Chapter 5 - TDD in High Gear and Low Gear
+
+Analogy made with biking where yous tart with low gear (unit tests) and then start moving towards higher gears (e2e tests). Allowing to hide further more the implementation details and to have tests with less coupling towards implementation details.
+
+To reduce coupling with domain models:
+
+* Fixture functions to help initialize domain models
+* Adding services that will handle the domain models
+
+I'll just copy/paste from the book here for rules of thumb regarding tests to implement:
+
+> * Aim for one end-to-end test per feature
+> 
+> * Write the bulk of your tests against the service layer (edge-to-edge)
+> 
+> * Maintain a small core of tests written against your domain model (maintain is the important word here: start with a lot and delete once they are covered by services)
+>
+> * Error handling counts as a feature
+> 
+> * Express your service layer in terms of primitives rather than domain objects.

@@ -139,3 +139,15 @@ Some key takeaways:
 * Separate the core logic code from external states.
 
 This usually allows to do *edge-to-edge* testing, faking some details (quite often I/O). This requires some additional abstractions (around the filesystem for instance) and new explicit dependencies on this abstractions).
+
+
+## Chapter 4 - Service Layer pattern
+
+> Also called an *orchestration layer* or a *use-case layer*.
+
+* Service layer exposes the domain service functionalities through endpoints to the external world.
+* It wraps the boring stuff such as validate entry, calling the domain model and updating it, and finally persisting anything 
+* Interacting with our domain model is easier and allows for different type of interactions (cli, web, etc.)
+* Ease the high level and end-to-end tests, allowing for fewer tests, and easy refactoring of underlying domain models
+
+Although the concept of service is interesting, this chapter leaves thing in dubious state with still a lot of coupling towards the ORM from both the Flask app and services. Especially with the handling of sessions during tests.

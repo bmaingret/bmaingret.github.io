@@ -187,10 +187,19 @@ In Python, it fits very well the context manager type.
 > Constraints are rules that restricts the possible states of the model
 
 
-In order to ensure invariants and constraints, and in addition of the logic behind, we need to ensure the data integrity, especially in concurrent operations. While we could lock the entire table/database we are manipulating this won't scale up. The aggregate pattern groups up several domain objects in a container and allow to manipulate them as a single entity, thus ensuring data integrity and consistency of everything in it (the actual implementation will ensure it, not the simple use of the aggregate pattern).
+In order to ensure invariants and constraints, and in addition of the logic behind, we need to ensure the data integrity, especially in concurrent operations. While we could lock the entire table/database we are manipulating this won't scale up. The **aggregate pattern** groups up several domain objects in a container and allow to manipulate them as a single entity, thus ensuring data integrity and consistency of everything in it (the actual implementation will ensure it, not the simple use of the aggregate pattern).
 
 The choice of aggregates is not simple and depends of the constraints of each project. Keep in mind that the less data in the domain models, the easiest it is to ensure invariants and constraints.
 
 
 ![From Cosmic Python](/assets/2021-08-13-architecture-patterns-with-python/2021-08-13-architecture-patterns-with-python_recap_part1.png)
 > [Direct link @Cosmyc Python](https://github.com/cosmicpython/book/raw/master/images/apwp_0705.png)
+
+### Handling concurrency
+
+**Optimistic concurrency**: suppose things work fine most of the time
+
+* Locking *things* at db level usually comes with performance cost -> usually used in a *pessimistic concurrency* mindset
+* Using version numbers to control update and be able to detect and recover from concurrent updates
+
+Note: there is a lot a db specific way of implementing locking at different levels (consistent read, select for update, etc.)

@@ -4,17 +4,37 @@ tags: [pytest, test-driven, domain-driven]
 title: "Reading notes for Architecture Patterns with Python by Harry Percival, Bob Gregory"
 ---
 
-Notes, references and codes I wrote while reading [`Architecture Patterns with Python` by Harry Percival, Bob Gregory - O'Reilly](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/).
+Notes, references and codes I wrote while reading and coding along [`Architecture Patterns with Python` by Harry Percival, Bob Gregory - O'Reilly](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/).
 
 **Work in progress**
 
 <!--more-->
 
-## Coding along
+My code along repository [bmaingret/architecture-patterns-code-along](https://github.com/bmaingret/architecture-patterns-code-along).
 
-Minimal working examples following the book content at [github.com/bmaingret/architecture-patterns-code-along](https://github.com/bmaingret/architecture-patterns-code-along).
+The full code by the authors is also available, as well as their book at [github.com/cosmicpython](https://github.com/cosmicpython/).
 
-The full code by the authors is also available, as well as their book at [github.com/cosmicpython](https://github.com/cosmicpython/)
+- [Chapter 1 - Domain model](#chapter-1---domain-model)
+  - [Diving in the domain model](#diving-in-the-domain-model)
+  - [Value Object Pattern](#value-object-pattern)
+  - [Domain entity](#domain-entity)
+  - [Not everything must be in a class](#not-everything-must-be-in-a-class)
+  - [Exceptions as domain concepts](#exceptions-as-domain-concepts)
+- [Chapter 2 - Repository Pattern](#chapter-2---repository-pattern)
+  - [Repository pattern](#repository-pattern)
+  - [Port and Adapter](#port-and-adapter)
+  - [ORM](#orm)
+- [Interlude - Reproducibility and Continuous Integration](#interlude---reproducibility-and-continuous-integration)
+  - [Development and Production Environment - Python mess](#development-and-production-environment---python-mess)
+  - [Github Actions](#github-actions)
+  - [Git hooks - Pre-commit](#git-hooks---pre-commit)
+- [Chapter 3 - Coupling and Abstractions](#chapter-3---coupling-and-abstractions)
+- [Chapter 4 - Service Layer pattern](#chapter-4---service-layer-pattern)
+- [Chapter 5 - TDD in High Gear and Low Gear](#chapter-5---tdd-in-high-gear-and-low-gear)
+- [Chapter 6 - Unit Of Work](#chapter-6---unit-of-work)
+- [Chapter 7 - Aggregate and Consistency Boundaries](#chapter-7---aggregate-and-consistency-boundaries)
+  - [Handling concurrency](#handling-concurrency)
+- [Chapter 8 - Events and the Message Bus](#chapter-8---events-and-the-message-bus)
 
 ## Chapter 1 - Domain model
 
@@ -203,3 +223,5 @@ The choice of aggregates is not simple and depends of the constraints of each pr
 * Using version numbers to control update and be able to detect and recover from concurrent updates
 
 Note: there is a lot a db specific way of implementing locking at different levels (consistent read, select for update, etc.)
+
+## Chapter 8 - Events and the Message Bus

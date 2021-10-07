@@ -225,3 +225,16 @@ The choice of aggregates is not simple and depends of the constraints of each pr
 Note: there is a lot a db specific way of implementing locking at different levels (consistent read, select for update, etc.)
 
 ## Chapter 8 - Events and the Message Bus
+
+*Events* help to enforce the Single Responsibility Principle (the *S* of *SOLID*), preventing having multiple use cases tangled in a single place.
+
+*Message bus* allows to route the event messages to the different handlers. Typical middleware.
+
+Events can be raised and handled at different places:
+
+* Service layer takes events raised by the models and send them straight to message bus
+* Service layer raises events directly to the message bus
+* UoW collects events from aggregates and send them to the message bus
+
+![](/assets/2021-08-13-architecture-patterns-with-python/2021-08-13-architecture-patterns-with-python_events.png)
+> [Direct link @CosmicPython](https://github.com/cosmicpython/book/blob/master/images/apwp_0801.png)

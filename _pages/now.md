@@ -37,20 +37,23 @@ classes: wide
 
 ### Data engineering & Big Data
 
-- [ ] 🔨 [Coursera - Data Engineering, Big Data, and Machine Learning on GCP Specialization](https://www.coursera.org/specializations/gcp-data-machine-learning)
+- [X] [Coursera - Data Engineering, Big Data, and Machine Learning on GCP Specialization](https://www.coursera.org/specializations/gcp-data-machine-learning) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/H5XME5KFBR3V)
   - [X] [Google Cloud Platform Big Data and Machine Learning Fundamentals](https://www.coursera.org/learn/gcp-big-data-ml-fundamentals) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/26AHK797TXJJ)
   - [X] [Modernizing Data Lakes and Data Warehouses with GCP](https://www.coursera.org/learn/data-lakes-data-warehouses-gcp) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/XFG23SPKFJTK)
   - [X] [Building Batch Data Pipelines on GCP](https://www.coursera.org/learn/batch-data-pipelines-gcp) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/R7HBK43NLVNM)
-  - [X] [Building Resilient Streaming Analytics Systems on GCP](https://www.coursera.org/learn/streaming-analytics-systems-gcp) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/UZ8LS85U4JLH)
-  - [ ] [Smart Analytics, Machine Learning, and AI on GCP](https://www.coursera.org/learn/smart-analytics-machine-learning-ai-gcp) 
-
+  - [X] [Building Resilient Streaming Analytics Systems on GCP](https://www.coursera.org/learn/streaming-analytics-systems-gcp) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/CRVTZB855KVB)
+  - [X] [Smart Analytics, Machine Learning, and AI on GCP](https://www.coursera.org/learn/smart-analytics-machine-learning-ai-gcp) - [Certificate of completion](https://www.coursera.org/account/accomplishments/verify/VN95HDWFH7N2)
 
 ### Health and medical courses
 
 - [X] [eHealth: More than just an electronic record (Sidney University)](https://www.coursera.org/learn/ehealth) - [Certificate of completion](https://www.coursera.org/account/accomplishments/records/X8V4LN3PR52E)
 - [X] Human Research - Data or Specimens Only Research - 1-Basic Course (CITI) - [Certificate of completion](https://www.citiprogram.org/verify/?w7bea03c9-f70e-4881-80c4-6843a0901629-30475807)
-- [ ] [Health Informatics Specizalization - Johns Hopkins University](https://www.coursera.org/specializations/health-informatics)
+- [ ] [Health Informatics Specialization - Johns Hopkins University](https://www.coursera.org/specializations/health-informatics)
 - [ ] [Clinical Data Science Specialization](https://www.coursera.org/specializations/clinical-data-science)
 
+### Coding skills
 
-> Last updated: 2021-10-04
+- [ ] 🔨 [Architecture Patterns with Python](https://github.com/cosmicpython) - [My notes](/posts/2021-08-13-architecture-patterns-with-python.md) and [code along](https://github.com/bmaingret/architecture-patterns-code-along)
+
+
+> Last updated: 2021-10-07

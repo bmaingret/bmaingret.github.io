@@ -4,17 +4,37 @@ tags: [pytest, test-driven, domain-driven]
 title: "Reading notes for Architecture Patterns with Python by Harry Percival, Bob Gregory"
 ---
 
-Notes, references and codes I wrote while reading [`Architecture Patterns with Python` by Harry Percival, Bob Gregory - O'Reilly](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/).
+Notes, references and codes I wrote while reading and coding along [`Architecture Patterns with Python` by Harry Percival, Bob Gregory - O'Reilly](https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/).
 
 **Work in progress**
 
 <!--more-->
 
-## Coding along
+My code along repository [bmaingret/architecture-patterns-code-along](https://github.com/bmaingret/architecture-patterns-code-along).
 
-Minimal working examples following the book content at [github.com/bmaingret/architecture-patterns-code-along](https://github.com/bmaingret/architecture-patterns-code-along).
+The full code by the authors is also available, as well as their book at [github.com/cosmicpython](https://github.com/cosmicpython/).
 
-The full code by the authors is also available, as well as their book at [github.com/cosmicpython](https://github.com/cosmicpython/)
+- [Chapter 1 - Domain model](#chapter-1---domain-model)
+  - [Diving in the domain model](#diving-in-the-domain-model)
+  - [Value Object Pattern](#value-object-pattern)
+  - [Domain entity](#domain-entity)
+  - [Not everything must be in a class](#not-everything-must-be-in-a-class)
+  - [Exceptions as domain concepts](#exceptions-as-domain-concepts)
+- [Chapter 2 - Repository Pattern](#chapter-2---repository-pattern)
+  - [Repository pattern](#repository-pattern)
+  - [Port and Adapter](#port-and-adapter)
+  - [ORM](#orm)
+- [Interlude - Reproducibility and Continuous Integration](#interlude---reproducibility-and-continuous-integration)
+  - [Development and Production Environment - Python mess](#development-and-production-environment---python-mess)
+  - [Github Actions](#github-actions)
+  - [Git hooks - Pre-commit](#git-hooks---pre-commit)
+- [Chapter 3 - Coupling and Abstractions](#chapter-3---coupling-and-abstractions)
+- [Chapter 4 - Service Layer pattern](#chapter-4---service-layer-pattern)
+- [Chapter 5 - TDD in High Gear and Low Gear](#chapter-5---tdd-in-high-gear-and-low-gear)
+- [Chapter 6 - Unit Of Work](#chapter-6---unit-of-work)
+- [Chapter 7 - Aggregate and Consistency Boundaries](#chapter-7---aggregate-and-consistency-boundaries)
+  - [Handling concurrency](#handling-concurrency)
+- [Chapter 8 - Events and the Message Bus](#chapter-8---events-and-the-message-bus)
 
 ## Chapter 1 - Domain model
 
@@ -150,4 +170,84 @@ This usually allows to do *edge-to-edge* testing, faking some details (quite oft
 * Interacting with our domain model is easier and allows for different type of interactions (cli, web, etc.)
 * Ease the high level and end-to-end tests, allowing for fewer tests, and easy refactoring of underlying domain models
 
-Although the concept of service is interesting, this chapter leaves thing in dubious state with still a lot of coupling towards the ORM from both the Flask app and services. Especially with the handling of sessions during tests.
+Although the concept of service is interesting, this chapter leaves things in a dubious state with still a lot of coupling towards the ORM from both the Flask app and services, the low details of domain implementations are everywhere, and testing is getting more and more difficult to init properly.
+
+## Chapter 5 - TDD in High Gear and Low Gear
+
+Analogy made with biking where yous tart with low gear (unit tests) and then start moving towards higher gears (e2e tests). Allowing to hide further more the implementation details and to have tests with less coupling towards implementation details.
+
+To reduce coupling with domain models:
+
+* Fixture functions to help initialize domain models
+* Adding services that will handle the domain models
+
+I'll just copy/paste from the book here for rules of thumb regarding tests to implement:
+
+> * Aim for one end-to-end test per feature
+> 
+> * Write the bulk of your tests against the service layer (edge-to-edge)
+> 
+> * Maintain a small core of tests written against your domain model (maintain is the important word here: start with a lot and delete once they are covered by services)
+>
+> * Error handling counts as a feature
+> 
+> * Express your service layer in terms of primitives rather than domain objects.
+
+## Chapter 6 - Unit Of Work
+
+Services and API are still tightly coupled with the data persistency and session management. Unit of Work define a single entry point for data storage, allowing to nicely handle transactions (commits, rollbacks, failures, etc). It also eases the integration between the service and the repository layers.
+
+In Python, it fits very well the context manager type.
+
+
+## Chapter 7 - Aggregate and Consistency Boundaries
+
+> Invariants are conditions that are always true.
+
+> Constraints are rules that restricts the possible states of the model
+
+
+In order to ensure invariants and constraints, and in addition of the logic behind, we need to ensure the data integrity, especially in concurrent operations. While we could lock the entire table/database we are manipulating this won't scale up. The **aggregate pattern** groups up several domain objects in a container and allow to manipulate them as a single entity, thus ensuring data integrity and consistency of everything in it (the actual implementation will ensure it, not the simple use of the aggregate pattern).
+
+The choice of aggregates is not simple and depends of the constraints of each project. Keep in mind that the less data in the domain models, the easiest it is to ensure invariants and constraints.
+
+
+![From Cosmic Python](/assets/2021-08-13-architecture-patterns-with-python/2021-08-13-architecture-patterns-with-python_recap_part1.png)
+> [Direct link @Cosmyc Python](https://github.com/cosmicpython/book/raw/master/images/apwp_0705.png)
+
+### Handling concurrency
+
+**Optimistic concurrency**: suppose things work fine most of the time
+
+* Locking *things* at db level usually comes with performance cost -> usually used in a *pessimistic concurrency* mindset
+* Using version numbers to control update and be able to detect and recover from concurrent updates
+
+Note: there is a lot a db specific way of implementing locking at different levels (consistent read, select for update, etc.)
+
+## Chapter 8 - Events and the Message Bus
+
+*Events* help to enforce the Single Responsibility Principle (the *S* of *SOLID*), preventing having multiple use cases tangled in a single place.
+
+*Message bus* allows to route the event messages to the different handlers. Typical middleware.
+
+Events can be raised and handled at different places:
+
+* Service layer takes events raised by the models and send them straight to message bus
+* Service layer raises events directly to the message bus
+* UoW collects events from aggregates and send them to the message bus
+
+![](/assets/2021-08-13-architecture-patterns-with-python/2021-08-13-architecture-patterns-with-python_events.png)
+> [Direct link @CosmicPython](https://github.com/cosmicpython/book/blob/master/images/apwp_0801.png)
+
+## Chapter 9 - Going to Town on the Message Bus
+
+> Using the message bus as an entry point for the service layer.
+
+* allows to be granular and stick to SRP
+* allows to write tests in terms of events.
+
+Service functions become event handlers, and as such all internal and external actions are managed the same way, through event handlers.
+
+When large changes are incoming adopt
+
+> follow the Preparatory Refactoring workflow, aka "Make the change easy; then make the easy change"

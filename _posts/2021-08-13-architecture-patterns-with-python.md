@@ -238,3 +238,16 @@ Events can be raised and handled at different places:
 
 ![](/assets/2021-08-13-architecture-patterns-with-python/2021-08-13-architecture-patterns-with-python_events.png)
 > [Direct link @CosmicPython](https://github.com/cosmicpython/book/blob/master/images/apwp_0801.png)
+
+## Chapter 9 - Going to Town on the Message Bus
+
+> Using the message bus as an entry point for the service layer.
+
+* allows to be granular and stick to SRP
+* allows to write tests in terms of events.
+
+Service functions become event handlers, and as such all internal and external actions are managed the same way, through event handlers.
+
+When large changes are incoming adopt
+
+> follow the Preparatory Refactoring workflow, aka "Make the change easy; then make the easy change"

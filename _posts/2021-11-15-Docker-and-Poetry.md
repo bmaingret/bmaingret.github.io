@@ -1,6 +1,6 @@
 ---
-category: [programming, python, devops]
-tags: [docker, poetry, pyenv, gcp]
+category: [programming]
+tags: [docker, poetry, pyenv, gcp, python, cloud]
 title: "Python and Poetry on Docker"
 ---
 

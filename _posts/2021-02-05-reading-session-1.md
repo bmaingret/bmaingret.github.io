@@ -1,5 +1,5 @@
 ---
-category: [datascience, reading]
+category: [reading]
 tags: []
 title: "Reading session #1 - 2021-02-05"
 ---

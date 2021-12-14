@@ -1,5 +1,5 @@
 ---
-category: "Misc"
+category: "misc"
 title: First post
 ---
 

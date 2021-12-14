@@ -1,6 +1,6 @@
 ---
-category: [programming, python, reading]
-tags: [pytest, test-driven, domain-driven]
+category: [programming]
+tags: [python, pytest, test-driven, domain-driven]
 title: "Reading notes for Architecture Patterns with Python by Harry Percival, Bob Gregory"
 ---
 

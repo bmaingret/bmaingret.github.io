@@ -1,5 +1,5 @@
 ---
-category: [datascience, assignement]
+category: [datascience]
 tags: [R, EDA, Data Science, Coursera, Plot]
 title: "EDA of activity monitoring data"
 ---

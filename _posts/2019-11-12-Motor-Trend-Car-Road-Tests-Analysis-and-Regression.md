@@ -1,6 +1,6 @@
 ---
 category: [datascience]
-tags: [R, EDA, Data Science, Coursera, Plot, Statistics]
+tags: [R, EDA, Coursera, statistics, datascience]
 title: "Motor Trend Car Road Tests (mtcars) datasets - Analysis and Regression"
 ---
 ## Motor Trend Car Road Tests (mtcars) datasets - Analysis and Regression

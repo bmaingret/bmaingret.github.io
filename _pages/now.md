@@ -1,15 +1,12 @@
 ---
-layout: single
 title: Now
 permalink: /now/
-classes: wide
+date: 2021-12-14
 ---
 
-> I worked 5 years in IT consulting at [Wavestone](https://wavestone.com) where I supported large companies to conduct their IT transformation in various topics (SD-WAN, IPv6, Industrial security, IoT).
-> 
-> I am now working at [Institut de Cancérologie de Lorraine](https://www.icl-lorraine.fr/) mostly doing data integration, managing the Enterprise Service Bus, and when the time and resources allow it machine learning projects.
-
 ## What am I up to these days
+
+Currently focusing on building up my coding skills and MLOPs know-how.
 
 ### Data Science & Machine Learning
 
@@ -53,7 +50,4 @@ classes: wide
 
 ### Coding skills
 
-- [ ] 🔨 [Architecture Patterns with Python](https://github.com/cosmicpython) - [My notes](/posts/2021-08-13-architecture-patterns-with-python.md) and [code along](https://github.com/bmaingret/architecture-patterns-code-along)
-
-
-> Last updated: 2021-10-07
+- [ ] 🔨 [Architecture Patterns with Python](https://github.com/cosmicpython) - [My notes]({% post_url 2021-08-13-architecture-patterns-with-python %}) and [code along](https://github.com/bmaingret/architecture-patterns-code-along)

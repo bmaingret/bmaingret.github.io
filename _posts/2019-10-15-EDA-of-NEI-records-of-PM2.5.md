@@ -1,6 +1,6 @@
 ---
 category: [datascience]
-tags: [R, EDA, Data Science, Coursera, Plot]
+tags: [R, EDA, Coursera, datascience]
 title: "EDA of NEI records of PM2.5"
 ---
 

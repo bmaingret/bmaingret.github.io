@@ -1,6 +1,6 @@
 ---
 category: [reading]
-tags: [datascience, reading, machine learning, Python, ETL]
+tags: [datascience, reading, machine learning, python, ETL]
 title: "Reading session #3 - 2021-04-21"
 ---
 

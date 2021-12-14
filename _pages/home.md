@@ -1,18 +1,21 @@
 ---
 title: Home
 permalink: /
-classes: wide
+date: 2021-12-14
 ---
 
-I am French engineer with a master in Telecommunications from INSA Lyon.<br />
-After working for 5 years in IT consulting at [Wavestone](https://wavestone.com), where I supported large companies to conduct their IT transformation in various topics (SD-WAN, IPv6, Industrial security, IoT), I decided to take some time to define and realize my own data science curriculum thanks to online resources, and are now working in this field.<br />
-This is a personal website I started during my training in data sciences. <br />
+French engineer with a master in Telecommunications from INSA Lyon.<br />
 
+* 5 years in IT consulting at [Wavestone](https://wavestone.com) where I supported large companies to conduct their IT transformation in various topics (SD-WAN, IPv6, Industrial security, IoT).<br />
 
+* 1 year on my own data science curriculum thanks to online resources, and am now working in this field.<br />
 
-If you want to know what I am currently working on, head to my [now page](/now/).
+* 1 year [Institut de Cancérologie de Lorraine](https://www.icl-lorraine.fr/) mostly doing data integration, managing the Enterprise Service Bus, and when the time and resources allow it machine learning projects.<br />
 
-> Links to my LinkedIn and GitHub are in the left side-bar.
+> Now looking for a remote job in machine learning/software engineering.
+
+> If you want to know what I am currently working on, head to my [now page](/now/).
+
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 

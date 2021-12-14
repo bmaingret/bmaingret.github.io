@@ -1,6 +1,6 @@
 ---
 category: [datascience]
-tags: [R, EDA, Data Science, Coursera, Plot, Statistics]
+tags: [R, EDA, Coursera, statistics, datascience]
 title: "Effect of Vitamin C on Tooth Growth in Guinea Pigs"
 ---
 

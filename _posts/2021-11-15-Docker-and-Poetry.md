@@ -1,7 +1,9 @@
 ---
 category: [programming]
-tags: [docker, poetry, pyenv, gcp, python, cloud]
+tags: [docker, python, cloud]
 title: "Python and Poetry on Docker"
+sidebar:
+  nav: "docs"
 ---
 
 Build a multi-stage Docker image from official Python images with support for Poetry projects.

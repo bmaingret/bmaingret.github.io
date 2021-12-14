@@ -1,8 +1,7 @@
 ---
-layout: single
 title: Privacy Statement
 permalink: /privacy-statement/
-classes: wide
+date: 2020-04-21
 ---
 
 ## Log file
@@ -23,4 +22,3 @@ This website uses Google Analytics. It allows me to see how many visitors visit 
 You can read Google Analytics Privacy Policy [here](https://marketingplatform.google.com/about/analytics/terms/us/).
 
 If you wish to opt-out from the cookies, you can do so through your web browser options.
-> Last updated: 2020-04-21

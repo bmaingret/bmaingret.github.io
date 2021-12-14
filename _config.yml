@@ -1,7 +1,7 @@
 title: Baptiste Maingret's Homepage
 email: baptiste.maingret@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website I started during my training in data sciences. There might be more. Or not.
+  Personal website I started during my training in data sciences.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bmaingret.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  bmaingret
@@ -51,9 +51,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 author:
         name: "Baptiste Maingret"
         avatar: "/assets/images/bio-photo.webp"
-        bio: "French aspiring data scientist with a strong appeal for eHealth.
-        I also like travelling, guitars, burratas, video games and in general any ***-**engineering."
-        location: "Nancy, France"
+        bio: "French engineer with a strong interest in data and machine learning.
+        I also like travelling and guitars and in general any ***-**engineering."
+        location: "Marseille, France"
         links:
                 - label: "Linkedin"
                   icon: "fab fa-fw fa-linkedin"
@@ -63,9 +63,12 @@ author:
                   url: "https://github.com/bmaingret"
 
 
-category_archives:
-        type: liquid
-        path: /categories/
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
  
 defaults:
@@ -78,6 +81,10 @@ defaults:
       author_profile: true
       classes: wide
       excerpt_separator: <!--more-->
+      show_date: true
+      read_time: true
+      permalink: /blog/:year-:month-:day-:title
+
   # _pages
   - scope:
       path: ""

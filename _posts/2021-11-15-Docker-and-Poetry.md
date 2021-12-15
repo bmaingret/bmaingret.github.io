@@ -2,8 +2,6 @@
 category: [programming]
 tags: [docker, python, cloud]
 title: "Python and Poetry on Docker"
-sidebar:
-  nav: "docs"
 ---
 
 Build a multi-stage Docker image from official Python images with support for Poetry projects.
@@ -197,6 +195,7 @@ Nothing fancy here, we use the `poetry build` command, and add the `--flag wheel
 
 ```dockerfile
 FROM staging as build
+ARG APP_PATH
 
 WORKDIR $APP_PATH
 RUN poetry build --format wheel

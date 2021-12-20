@@ -1,7 +1,7 @@
 ---
 category: [reading]
 tags: [datascience, reading, machine learning, MLOps]
-title: "Reading session #2 - 2021-03-21"
+title: "Reading session #2"
 ---
 
 ## Articles

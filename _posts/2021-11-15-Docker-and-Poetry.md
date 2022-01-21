@@ -9,6 +9,9 @@ Build a multi-stage Docker image from official Python images with support for Po
 [Source code on Github](https://github.com/bmaingret/coach-planner)
 
 <!--more-->
+
+Updated following [issues](https://github.com/bmaingret/coach-planner/issues) on the GitHub repository.
+
 Sources:
  * [Python=>Speed](https://pythonspeed.com/articles/base-image-python-docker-images/)
  * [Python images on docker.com](https://hub.docker.com/_/python)
@@ -191,7 +194,9 @@ We can still access a shell by overriding the entrypoint, but that shouldn't be 
 
 ## Stage: Build
 
-Nothing fancy here, we use the `poetry build` command, and add the `--flag wheel` parameter to only build the wheel.
+We first use the `poetry build` command, and add the `--flag wheel` parameter to only build the wheel.
+
+Then we use `poetry export` to get a file containing dependency version contrainsts for our future pip installation. We pass the `--without-hashes` but this could be removed and take part of `pip install --require-hashes`.
 
 ```dockerfile
 FROM staging as build
@@ -199,6 +204,7 @@ ARG APP_PATH
 
 WORKDIR $APP_PATH
 RUN poetry build --format wheel
+RUN poetry export --format requirements.txt --output constraints.txt --without-hashes
 ```
 
 ## Stage: Production
@@ -227,14 +233,15 @@ ENV \
 
 ### Installating our application
 
-We first retrieve the packaged application from the `build` stage using the `--from` flag of the `CP` command. Then we proceed with the installation using PIP.
+We first retrieve the packaged application and constraints file from the `build` stage using the `--from` flag of the `CP` command. Then we proceed with the installation using PIP.
 
 Note that we make use of wildcards, but we could also add the application version similarly to Python and Poetry versions, to get a more determinist install.
 
 ```dockerfile
 WORKDIR $APP_PATH
 COPY --from=build $APP_PATH/dist/*.whl ./
-RUN pip install  ./$APP_NAME*.whl
+COPY --from=build $APP_PATH/constraints.txt ./
+RUN pip install ./$APP_NAME*.whl --constraint constraints.txt
 ```
 
 

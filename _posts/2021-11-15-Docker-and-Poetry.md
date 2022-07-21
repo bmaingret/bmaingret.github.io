@@ -157,7 +157,7 @@ COPY ./$APP_NAME ./$APP_NAME
 Make sure to specify the `ARG` we need in this stage.
 
 ```dockerfile
-FROM staging as development
+FROM python-base as development
 ARG APP_NAME
 ARG APP_PATH
 ```
@@ -199,7 +199,7 @@ We first use the `poetry build` command, and add the `--flag wheel` parameter to
 Then we use `poetry export` to get a file containing dependency version contrainsts for our future pip installation. We pass the `--without-hashes` but this could be removed and take part of `pip install --require-hashes`.
 
 ```dockerfile
-FROM staging as build
+FROM python-base as build
 ARG APP_PATH
 
 WORKDIR $APP_PATH
